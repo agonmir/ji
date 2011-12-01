@@ -19,6 +19,11 @@ public class Bean implements Iterable<Property> {
 	private final Class<?> type;
 	private final Map<String, Property> properties;
 	
+	
+	/**
+	 * Constructor
+	 * @param type
+	 */
 	Bean(Class<?> type) {
 		this.type = type;
 		final Map<String, Property> properties = new HashMap<String, Property>();
